@@ -11,6 +11,7 @@ buttons.forEach((button) => {
   });
 });
 
+
 clearButton.addEventListener("click", () => {
   expressionInput.value = "";
   resultOutput.textContent = "Enter an expression to begin.";
