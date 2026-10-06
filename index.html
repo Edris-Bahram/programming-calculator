@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programming Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="calculator">
+    <h1>Programming Calculator</h1>
+
+    <input
+      id="expression"
+      type="text"
+      placeholder="Example: 0xff & 0b1111"
+      autocomplete="off"
+    />
+
+    <div class="button-grid">
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button data-value="/">÷</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button data-value="*">×</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button data-value="-">−</button>
+
+      <button data-value="0">0</button>
+      <button data-value=".">.</button>
+      <button data-value="(">(</button>
+      <button data-value="+">+</button>
+
+      <button data-value="0b">0b</button>
+      <button data-value="0o">0o</button>
+      <button data-value="0x">0x</button>
+      <button data-value="%">%</button>
+
+      <button data-value="&">&amp;</button>
+      <button data-value="|">|</button>
+      <button data-value="^">^</button>
+      <button data-value="~">~</button>
+
+      <button data-value="<<">&lt;&lt;</button>
+      <button data-value=">>">&gt;&gt;</button>
+      <button data-value="**">**</button>
+      <button id="clear" class="danger">Clear</button>
+
+      <button id="calculate" class="equals">Calculate</button>
+    </div>
+
+    <section class="result-section">
+      <h2>Result</h2>
+      <pre id="result">Enter an expression to begin.</pre>
+    </section>
+
+    <section class="help">
+      <h2>Examples</h2>
+      <ul>
+        <li><code>10 + 5</code></li>
+        <li><code>0xff &amp; 0b1111</code></li>
+        <li><code>2 ** 8</code></li>
+        <li><code>1 &lt;&lt; 4</code></li>
+        <li><code>~10</code></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
